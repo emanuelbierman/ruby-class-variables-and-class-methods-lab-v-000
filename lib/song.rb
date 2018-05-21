@@ -29,7 +29,7 @@ class Song
   end
 
   def genre_count
-    
+    @@genres.each do 
   end
 
   def artist_count
