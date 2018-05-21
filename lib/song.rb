@@ -39,7 +39,13 @@ class Song
   end
 
   def artist_count
-
+    @@artists.each do |artist|
+      if artist in @@artist_count
+        @@artist_count[artist] =+ 1
+      else
+        @@artist_count[artist] = 1
+      end
+    end
   end
 
 end
